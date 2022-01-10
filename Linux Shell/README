@@ -1,0 +1,29 @@
+Daniel Yona, 312289085
+This is a program that stimulates how the Operation-System manages and stores the different 
+files and their data, their names and anything associated to them.
+This program follows the way that the unix-file-system uses to store the files and data on the disk.
+In this final excrecise, we are requested to stimulate the Disk File System of a small computer
+with two very known methods: 
+                            A) Direct Blocks.
+                            B) Single In-Direct Block.
+The Disk-File-System uses the different blocks of the disk to store information in a 
+speciefic way, which the normal user would not be able to navigate in, therefore
+this program is created to organize the data on the disk and simplify if for the user, who
+will request to read from a single file and not the whole blocks of the disk.
+There are 9 functions for the user in this program:
+1)listAll -> This function will print the disk's content, alongside the OpenFileDescriptors vector in a table format,
+giving the user information of the current status of the different files on the system.
+2)fsFormat -> Format the disk, this function must be called before any operation can be performed
+on our disk. This is the initialization of the disk.
+3)CreateFile -> Create a new file, after calling the function enter the name you wish to name the file.
+4)OpenFile -> This function is used to open closed files, enter the file's name you want to open.
+5)CloseFile -> This function is used to close opened files, enter a file's file descriptor to close.
+6)WriteToFile -> This function is used to write to a given fd, the user will need to enter the file descriptor
+of the file he wants to write to, and then the data to be written to the file.
+7)ReadFromFile -> This function is used to read from a given fd, the user will need to enter the file descriptor 
+of the file he wants to read from, and then the length of data to be read.
+8)DeleteFile -> This function is used to delete files, enter the file's name you want to delete.
+0)Exit-> Exit the program and close terminal.
+
+How to compile: CTRL + SHIFT + B
+How to run: CTRL + F5

@@ -1,0 +1,22 @@
+README
+Daniel Yona 
+312289085
+
+Exercise 3 - HTTP 1.1 server
+
+this is a program that simulates a HTTP server
+ which Constructs an HTTP response based on client's request and Sends the response to the client.
+ This program support only GET requests.
+
+How to use:
+ server <port> <pool-size> <max-number-of-request>
+
+Functions: 
+1) isNum() - isNum gets a string as a paremeter and returns 0 if the string is a numerical string.
+2) addStr() - Add string to an other without consider the size
+3) get_mime_type - get the type of the file
+4) send302() - send "302" error
+5) sendError() - send error by the entered number
+6) sendFile() - send the header of the file
+7) sendDir() - send the header of the direcory and its content 
+8) check() - process the reuqest and send the content as requested

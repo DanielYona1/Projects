@@ -1,9 +1,3 @@
-README
-Daniel Yona 
-312289085
-
-Exercise 3 - HTTP 1.1 server
-
 this is a program that simulates a HTTP server
  which Constructs an HTTP response based on client's request and Sends the response to the client.
  This program support only GET requests.

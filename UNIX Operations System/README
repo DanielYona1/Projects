@@ -23,6 +23,3 @@ of the file he wants to write to, and then the data to be written to the file.
 of the file he wants to read from, and then the length of data to be read.
 8)DeleteFile -> This function is used to delete files, enter the file's name you want to delete.
 0)Exit-> Exit the program and close terminal.
-
-How to compile: CTRL + SHIFT + B
-How to run: CTRL + F5

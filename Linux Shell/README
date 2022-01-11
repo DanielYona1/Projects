@@ -1,8 +1,5 @@
 This is a program in C that demonstrates a simple shell terminal in Linux OS.
 This shell allows the user to make different system calls using the terminal like the real terminal.
-Example for commands:
-How to compile: Open the folder containing the files, open a terminal and type: "gcc ex1.c -o ex1"
-How to run: After compiling, in the terminal type: ./ex1
 In order to terminate the program enter the "done" call, this will close everything but before doing so,
 it will print some details about the last run, like how many commands were executed.
 ls, ls -l, man, cat...

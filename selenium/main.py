@@ -7,11 +7,11 @@ import os
 PATH = "C:\Program Files (x86)/chromedriver.exe"
 driver = webdriver.Chrome(PATH)
 driver.get("https://twitter.com/amit_segal")
-if not os.path.exists("test"):
-    os.mkdir("test")
-men_file = open("test/@_file.txt", "w")
-tweet_file = open("test/tweet_file.txt", "w")
-tag_file = open("test/tag_file.txt", "w")
+if not os.path.exists("output"):
+    os.mkdir("output")
+men_file = open("output/@_file.txt", "w")
+tweet_file = open("output/tweet_file.txt", "w")
+tag_file = open("output/tag_file.txt", "w")
 counter = 0
 tweet_list = []
 men_list = []

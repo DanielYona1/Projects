@@ -1,0 +1,73 @@
+<!-- index.html -->
+<!doctype html>
+<html>
+<head>
+    <title>Edit Tour</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <!-- load bootstrap via CDN -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
+    "></script> <!-- load jquery via CDN -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="/js/update_tour.js">
+    </script> <!-- load our javascript file -->
+</head>
+
+<body>
+    <div class="col-sm-6 col-sm-offset-3">
+
+        <h1>Edit Tour Form</h1>
+        <!-- OUR FORM -->
+        <form id="edit_form" name="edit_form" method="PUT">
+            <div id="name-group" class="form-group">
+                <label for="tour_id">Tour ID to edit:</label>
+                <input type="text" class="form-control" name="tour_id" id="tour_id" placeholder="write id here"
+                    required>
+                <!-- errors will go here -->
+            </div>
+            <!-- NAME -->
+            <div id="name-group" class="form-group">
+                <label for="guide_name">Guide's Name</label>
+                <input type="text" class="form-control" name="guide_name" id="guide_name" placeholder="Insert your name"
+                    >
+                <!-- errors will go here -->
+            </div>
+            <div id="name-group" class="form-group">
+                <label for="guide_email">Guide's E-mail</label>
+                <input type="text" class="form-control" name="guide_email" id="guide_email" placeholder="example@host.com"
+                    >
+                <!-- errors will go here -->
+            </div>
+            <div id="name-group" class="form-group">
+                <label for="guide_phone">Guide's Phone Number</label>
+                <input type="tel" class="form-control" name="guide_phone" id="guide_phone" placeholder="+972526975325"
+                    >
+                <!-- errors will go here -->
+            </div>
+            <div id="name-group" class="form-group">
+                <label for="duration">Duration</label>
+                <input type="text" class="form-control" name="duration" id="duration"
+                    placeholder="Tour duration in days" >
+                <!-- errors will go here -->
+            </div>
+            <!-- profession -->
+            <div id="name-group" class="form-group">
+                <label for="start_date">Start Date</label>
+                <input type="date" class="form-control" name="start_date" id="start_date"
+                    placeholder="Enter your tour's starting date">
+                <!-- errors will go here -->
+            </div>
+
+            <!-- EMAIL -->
+            <div id="email-group" class="form-group">
+                <label for="cost">Cost</label>
+                <input type="number" class="form-control" name="cost" id = "cost" placeholder="Cost in NIS">
+                <!-- errors will go here -->
+            </div>
+            <button type="submit" class="btn btn-success">Submit <span class="fa fa-arrow-right"></span></button>
+
+        </form>
+
+    </div>
+</body>
+
+</html>

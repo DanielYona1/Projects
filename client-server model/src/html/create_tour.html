@@ -1,0 +1,76 @@
+<!-- index.html -->
+<!doctype html>
+<html>
+<head>
+    <title>ADD user</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <!-- load bootstrap via CDN -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
+    "></script> <!-- load jquery via CDN -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="/js/create_tour.js">
+    </script> <!-- load our javascript file -->
+</head>
+
+<body>
+    <div class="col-sm-6 col-sm-offset-3">
+
+        <h1>Create Tour Form</h1>
+
+        <!-- OUR FORM -->
+        <form id="tour_form" name="tour_form" method="POST">
+
+            <!-- NAME -->
+            <div id="name-group" class="form-group">
+                <label for="guide_name">Tour's Name</label>
+                <input type="text" class="form-control" name="tour_name" id="tour_name" placeholder="Insert your tour's name"
+                    required>
+                <!-- errors will go here -->
+            </div>
+            <div id="name-group" class="form-group">
+                <label for="start_date">Start date</label>
+                <input type="date" class="form-control" name="start_date" id="start_date"
+                    placeholder="Enter your tour's starting date">
+                <!-- errors will go here -->
+            </div>
+            <div id="name-group" class="form-group">
+                <label for="duration">Tour's duration</label>
+                <input type="text" class="form-control" name="duration" id="duration"
+                    placeholder="Tour duration in days" required>   
+                <!-- errors will go here -->
+            </div>
+            <div id="email-group" class="form-group">
+                <label for="cost">Tour price</label>
+                <input type="number" class="form-control" name="price" id = "price" placeholder="Price in NIS">
+                <!-- errors will go here -->
+            </div>
+            <!-- ID -->
+            <div id="name-group" class="form-group">
+                <label for="tour_id">Tour guide (Choose from the list)</label>
+                <div class="custom-select"> 
+                    <select id="selectList">
+                    </select>
+                </div>
+                <input type="text" class="form-control" name="guide_id" id="guide_id" placeholder="ID" required>
+                <!-- <input type="text" class="form-control" name="tour_id" id="tour_id" placeholder="write id here"
+                    required> -->
+                <!-- errors will go here -->
+            </div>
+
+            <!-- password -->
+           
+
+
+            <!-- profession -->
+            
+
+            <!-- EMAIL -->
+            
+            <button id = "new_bto" type="submit" class="btn btn-success">Submit <span class="fa fa-arrow-right"></span></button>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
